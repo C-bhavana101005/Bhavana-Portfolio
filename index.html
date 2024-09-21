@@ -1,79 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bhavana</title>
-  <link rel="stylesheet" href="(link unavailable)">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: darkcyan;
-    }
-    
-    img {
-      display: block;
-      margin: 20px auto;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      max-width: 100%; /* Flexible image sizing */
-      height: auto;
-    }
-    
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      color: yellowgreen;
-      margin-top: 10px;
-    }
-  h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      color: darkmagenta;
-      margin-top: 20px;
-    }
-    
-    p {
-      max-width: 90%;
-      margin: 0 auto;
-      font-family: serif;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-    
-    /* Media queries for responsive design */
-    @media only screen and (max-width: 768px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-    @media only screen and (max-width: 480px) {
-      img {
-        width: 80%;
-        margin: 10px auto;
-      }
-      h1 {
-        font-size: 1.2rem;
-      }
-      h2 {
-        font-size: 1rem;
-      }
-      p {
-        font-size: 14px;
-      }
-    }
-  </style>
-</head>
-<body>
- <h1>Chandrakantham Bhavana</h1>
+<html>
+    <head>
+        <title>Bhavana</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body style="background-color:darkcyan;">
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                position: fixed;
+                left: 600px;
+                bottom: 300px;
+                text-align: justify;
+                font-family: serif;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+            img {
+                position: fixed;
+                top: 50px;
+                left: 100px;
+                border-radius: 50%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+            h1 {
+                position: fixed;
+                top: 250px;
+                left: 30px;
+                font-size: 30px;
+                color: yellowgreen;
+            }
+            h2 {
+                position: fixed;
+                top: 100px;
+                left: 600px;
+                font-size: 30px;
+                color: darkmagenta;
+            }
+            hr {
+                position: fixed;
+                left: 600px;
+                bottom: 250px;
+                width: 500px;
+                border: 1px solid yellowgreen;
+            }
+            .additional-info {
+                position: fixed;
+                left: 600px;
+                bottom: 200px;
+                font-family: serif;
+                font-size: 18px;
+                color: white;
+                line-height: 1.5;
+            }
+            .navbar {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                background-color: rgba(0, 0, 0, 0.2);
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            .navbar a {
+                text-decoration: none;
+                color: rgb(235, 230, 233);
+                font-size: 1.2rem;
+                padding: 8px;
+                transition: color 0.3s ease;
+            }
+            .navbar a:hover {
+                color: lightblue;
+            }
+            .linkedin-icon {
+                color: rgb(235, 230, 233);
+                font-size: 1.5em;
+                transition: color 0.3s ease;
+            }
+            .linkedin-icon:hover {
+                color: lightskyblue;
+            }
+        </style>
+
+        <h1>Chandrakantham Bhavana</h1>
         <h2>Self Introduction :</h2>
         <p>
             Hello! My name is C. Bhavana, and I am currently focused on completing my <br>undergraduate degree (B.Tech) and securing a job in the software industry.
@@ -107,5 +122,5 @@
                 <i class="fab fa-linkedin linkedin-icon"></i>
             </a>
         </div>
-</body>
+    </body>
 </html>
