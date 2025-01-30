@@ -1,104 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <style>
-            body {
-                background-color: darkcyan;
-                margin: 0;
-                padding: 0;
-                font-family: 'Georgia', serif;
-                color: #333;
-            }
-            h1 {
-                text-align: left;
-                margin-top: 50px;
-                font-size: 2.5em;
-                color: brown;
-            }
-            .content {
-                max-width: 1000px;
-                margin: 50px auto;
-                padding: 20px;
-                background-color: rgb(183, 185, 185);
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            .content p {
-                font-size: 1.2em;
-                line-height: 1.8;
-                margin: 20px 0;
-            }
-            .content h2 {
-                font-size: 1.5em;
-                margin-top: 40px;
-                color: darkmagenta;
-            }
-            .navbar {
-                position: fixed;
-                top: 10px;
-                right: 10px;
-                display: flex;
-                gap: 20px;
-                padding: 10px 20px;
-                background-color: rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
-            }
-            .navbar a {
-                text-decoration: none;
-                color: white;
-                font-size: 1.2rem;
-                padding: 5px;
-                transition: color 0.3s ease;
-            }
-            .navbar a:hover {
-                color: blue;
-            }
-            .linkedin-icon {
-                color: white;
-                font-size: 1.5em;
-                transition: color 0.3s ease;
-            }
-            .linkedin-icon:hover {
-                color: rgb(17, 86, 129);
-            }
-        </style>
-    </head>
-    <body>
-        <h1>About Me :</h1>
-        <div class="content">
-            <p>
-                As a fresh graduate from SVR Engineering College, I am looking for a job within the software industry that will enable me to creatively showcase my talents while challenging me to adopt new skills and processes needed to advance within my chosen career.
-            </p>
-            <h2>Strengths</h2>
-            <p>
-                Confidence, <br>
-                Analytical skills, <br>
-                Critical thinking, <br>
-                Ability to handle multitasking, <br>
-                Positive attitude, <br>
-                Time management.
-            </p>
-            <h2>Hobbies</h2>
-            <p>
-                Browsing the internet, <br>
-                Drawing, <br>
-                Listening to music, <br>
-                Learning about new things.
-            </p>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkcyan;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
 
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="About me.html">About me</a>
-            <a href="Academic Qualification.html">Academic Qualification</a>
-            <a href="Skills.html">Skills</a>
-            <a href="certificates.html">Certificates</a>
-            <a href="Contact.html">Contact</a>
-            <a href="https://www.linkedin.com/feed/">
-                <i class="fab fa-linkedin linkedin-icon"></i>
-            </a>
+        h1 {
+            margin-top: 70px;
+            font-size: 2.5rem;
+            color: brown;
+            text-align: left;
+        }
+        p{
+            text-align: justify;
+        }
+        .content {
+            background-color: #c4c2c2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: darkmagenta;
+            font-size: 1.8rem;
+            text-align: left;
+        }
+
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+
+        .navbar-custom .nav-link {
+            color: rgb(250, 250, 250);
+            transition: color 0.3s ease;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: blue;
+        }
+
+        .linkedin-icon {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .linkedin-icon:hover {
+            color: rgb(22, 26, 28);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+
+            .navbar-custom {
+                padding: 8px 15px;
+            }
+
+            .linkedin-icon {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About me.html">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Academic Qualification.html">Academic Qualification</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/feed/">
+                            <i class="fab fa-linkedin linkedin-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>About Me :</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="content text-center">
+                    <p>
+                        As a fresh graduate from SVR Engineering College, I am looking for a job within the software industry that will enable me to creatively showcase my talents while challenging me to adopt new skills and processes needed to advance within my chosen career.
+                    </p>
+                    <h2>Strengths</h2>
+                    <p>
+                        <b>-</b>Confidence, <br>
+                        <b>-</b>Analytical skills, <br>
+                        <b>-</b>Critical thinking, <br>
+                        <b>-</b>Ability to handle multitasking, <br>
+                        <b>-</b> Positive attitude, <br>
+                        <b>-</b>Time management.
+                    </p>
+                    <h2>Hobbies</h2>
+                    <p>
+                        <b>-</b>Browsing the internet, <br>
+                        <b>-</b>Drawing, <br>
+                        <b>-</b>Listening to music, <br>
+                        <b>-</b>Learning about new things.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
